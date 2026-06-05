@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Allen Electric Heating & Air | HVAC Services – [Your City], PA</title>
+<meta name="description" content="Allen Electric Heating & Air provides expert AC repair, installation, and electric heating services in [Your City] and surrounding areas. Licensed & insured. Free estimates." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0D1B2A;
+  --navy-light: #1a2e44;
+  --red: #D84F2A;
+  --red-dark: #b33e1e;
+  --blue: #1E74D8;
+  --blue-light: #e8f2fd;
+  --cream: #F8F5F0;
+  --gray: #6B7280;
+  --border: #E5E7EB;
+  --white: #fff;
+  --text: #1C2331;
+  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: var(--text); background: var(--white); line-height: 1.6; }
+
+/* NAV */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5%;
+  height: 68px;
+}
+.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.nav-logo-text { color: var(--white); font-family: var(--font-body); font-weight: 600; font-size: 14px; letter-spacing: 0.04em; line-height: 1.3; }
+.nav-logo-text span { display: block; color: #F5A623; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 14px; font-weight: 500; transition: color .2s; }
+.nav-links a:hover { color: #fff; }
+.nav-cta { background: var(--red); color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 600; transition: background .2s; white-space: nowrap; }
+.nav-cta:hover { background: var(--red-dark); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+.hamburger span { display: block; width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: all .3s; }
+.mobile-menu { display: none; position: fixed; top: 68px; left: 0; right: 0; background: var(--navy); z-index: 99; padding: 1.5rem 5%; flex-direction: column; gap: 1rem; border-top: 1px solid rgba(255,255,255,0.1); }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 16px; font-weight: 500; padding: .5rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.mobile-menu a:last-child { border: none; }
+.mobile-cta { background: var(--red); color: #fff !important; text-align: center; padding: 12px !important; border-radius: 6px; border: none !important; font-weight: 600 !important; }
+
+/* HERO */
+.hero {
+  background: var(--navy);
+  padding: 80px 5% 90px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+}
+.hero-badge { display: inline-block; background: rgba(245,166,35,0.15); color: #F5A623; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 1.25rem; }
+.hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); color: #fff; line-height: 1.2; margin-bottom: 1.25rem; }
+.hero h1 span { color: #F5A623; }
+.hero-sub { color: rgba(255,255,255,0.65); font-size: 1.05rem; margin-bottom: 2rem; max-width: 480px; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-primary { background: var(--red); color: #fff; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px; transition: background .2s; display: inline-block; }
+.btn-primary:hover { background: var(--red-dark); }
+.btn-ghost { color: #fff; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px; border: 1.5px solid rgba(255,255,255,0.3); transition: border-color .2s; display: inline-block; }
+.btn-ghost:hover { border-color: #fff; }
+.hero-trust { margin-top: 2.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.trust-item { color: rgba(255,255,255,0.5); font-size: 13px; display: flex; align-items: center; gap: 6px; }
+.trust-item svg { color: #F5A623; flex-shrink: 0; }
+.hero-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 2rem; }
+.hero-card h3 { color: #F5A623; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1.25rem; }
+.hero-services { list-style: none; display: flex; flex-direction: column; gap: 0.875rem; }
+.hero-services li { display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,0.8); font-size: 15px; }
+.hero-services li::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); flex-shrink: 0; }
+.hero-stat { margin-top: 1.75rem; padding-top: 1.75rem; border-top: 1px solid rgba(255,255,255,0.1); display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center; }
+.hero-stat-num { color: #fff; font-size: 1.5rem; font-weight: 700; display: block; }
+.hero-stat-label { color: rgba(255,255,255,0.45); font-size: 12px; }
+
+/* TRUST BAR */
+.trust-bar { background: var(--cream); padding: 1.25rem 5%; display: flex; align-items: center; justify-content: center; gap: 2.5rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+.trust-bar-item { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: var(--gray); }
+.trust-bar-item svg { color: var(--blue); }
+
+/* SECTIONS */
+section { padding: 80px 5%; }
+.section-label { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 0.75rem; }
+.section-title { font-family: var(--font-display); font-size: clamp(1.75rem, 3vw, 2.4rem); color: var(--navy); margin-bottom: 1rem; line-height: 1.25; }
+.section-sub { color: var(--gray); font-size: 1.05rem; max-width: 600px; }
+.section-header { margin-bottom: 3rem; }
+.section-header.center { text-align: center; }
+.section-header.center .section-sub { margin: 0 auto; }
+
+/* SERVICES */
+.services-bg { background: var(--cream); }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.service-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; transition: box-shadow .2s, transform .2s; }
+.service-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.08); transform: translateY(-2px); }
+.service-icon { width: 48px; height: 48px; border-radius: 10px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; }
+.service-icon svg { color: var(--blue); }
+.service-card h3 { font-size: 18px; font-weight: 600; color: var(--navy); margin-bottom: 0.625rem; }
+.service-card p { color: var(--gray); font-size: 14px; line-height: 1.65; margin-bottom: 1.25rem; }
+.service-card a { color: var(--blue); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
+.service-card a:hover { color: var(--navy); }
+
+/* WHY US */
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.why-points { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
+.why-point { display: flex; gap: 1rem; }
+.why-num { width: 36px; height: 36px; border-radius: 8px; background: var(--navy); color: #F5A623; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.why-point h4 { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+.why-point p { color: var(--gray); font-size: 14px; }
+.why-visual { background: var(--navy); border-radius: 20px; padding: 2.5rem; }
+.why-visual h3 { color: #F5A623; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.5rem; }
+.cert-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+.cert-list li { display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,0.85); font-size: 15px; }
+.cert-dot { width: 10px; height: 10px; border-radius: 50%; background: #1E74D8; flex-shrink: 0; }
+.emergency-box { margin-top: 2rem; padding: 1.5rem; background: rgba(216,79,42,0.15); border: 1px solid rgba(216,79,42,0.3); border-radius: 12px; }
+.emergency-box p { color: rgba(255,255,255,0.8); font-size: 14px; margin-bottom: 0.5rem; }
+.emergency-box .phone { color: #fff; font-size: 1.4rem; font-weight: 700; text-decoration: none; display: block; }
+.emergency-box .phone:hover { color: #F5A623; }
+
+/* AREAS */
+.areas-bg { background: var(--cream); }
+.areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-top: 2.5rem; }
+.area-chip { background: var(--white); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; font-size: 14px; font-weight: 500; color: var(--navy); text-align: center; }
+
+/* TESTIMONIALS */
+.testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.testimonial { background: var(--cream); border-radius: 14px; padding: 1.75rem; }
+.stars { color: #F5A623; font-size: 16px; letter-spacing: 2px; margin-bottom: 1rem; }
+.testimonial p { color: var(--text); font-size: 15px; line-height: 1.7; font-style: italic; margin-bottom: 1.25rem; }
+.testimonial-author { display: flex; align-items: center; gap: 10px; }
+.author-avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--navy); color: #F5A623; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
+.author-name { font-weight: 600; font-size: 14px; color: var(--navy); }
+.author-loc { font-size: 12px; color: var(--gray); }
+
+/* CONTACT / QUOTE */
+.contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: start; }
+.contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+.contact-item { display: flex; gap: 14px; }
+.contact-icon { width: 44px; height: 44px; border-radius: 10px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.contact-icon svg { color: var(--blue); }
+.contact-label { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray); margin-bottom: 2px; }
+.contact-value { font-size: 16px; font-weight: 600; color: var(--navy); text-decoration: none; }
+.contact-value:hover { color: var(--blue); }
+.form-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 2.5rem; }
+.form-card h3 { font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
+.form-card .form-sub { color: var(--gray); font-size: 14px; margin-bottom: 1.75rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 1rem; }
+.form-group label { font-size: 13px; font-weight: 600; color: var(--navy); }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 11px 14px; border: 1.5px solid var(--border); border-radius: 8px;
+  font-family: var(--font-body); font-size: 15px; color: var(--text);
+  background: var(--white); outline: none; transition: border-color .2s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue); }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-submit { width: 100%; padding: 14px; background: var(--red); color: #fff; border: none; border-radius: 8px; font-family: var(--font-body); font-size: 16px; font-weight: 600; cursor: pointer; transition: background .2s; margin-top: 0.5rem; }
+.form-submit:hover { background: var(--red-dark); }
+.form-note { font-size: 12px; color: var(--gray); text-align: center; margin-top: 0.75rem; }
+#form-success { display: none; background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 10px; padding: 1.5rem; text-align: center; }
+#form-success p { color: #065f46; font-weight: 600; font-size: 16px; margin-bottom: 0.5rem; }
+#form-success small { color: #047857; font-size: 14px; }
+
+/* FOOTER */
+footer { background: var(--navy); color: rgba(255,255,255,0.6); padding: 3rem 5% 2rem; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2.5rem; }
+.footer-brand p { font-size: 14px; line-height: 1.7; margin-top: 1rem; }
+.footer-col h4 { color: #fff; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 1rem; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.625rem; }
+.footer-col ul a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14px; transition: color .2s; }
+.footer-col ul a:hover { color: #fff; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.footer-bottom span { font-size: 13px; }
+
+/* SCROLL ANIMATIONS */
+[data-fade] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+[data-fade].visible { opacity: 1; transform: none; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; gap: 2rem; }
+  .why-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .form-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .hero { padding: 60px 5% 70px; }
+  section { padding: 60px 5%; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .hero-stat { grid-template-columns: repeat(3, 1fr); }
+  .trust-bar { gap: 1.25rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="38" height="38">
+      <polygon points="24,3 39,3 46,16 39,30 24,30 17,16" fill="#0D1B2A" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <clipPath id="lh"><rect x="0" y="0" width="31" height="48"/></clipPath>
+      <polygon points="24,3 39,3 46,16 39,30 24,30 17,16" fill="#E84C1E" clip-path="url(#lh)" opacity="0.9"/>
+      <clipPath id="rh"><rect x="31" y="0" width="48" height="48"/></clipPath>
+      <polygon points="24,3 39,3 46,16 39,30 24,30 17,16" fill="#1E90D8" clip-path="url(#rh)" opacity="0.9"/>
+      <polygon points="34,6 29,17 33,17 30,28 37,15 33,15 36.5,6" fill="#F5C518"/>
+    </svg>
+    <div class="nav-logo-text">
+      Allen Electric
+      <span>Heating &amp; Air</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why-us">About</a></li>
+    <li><a href="#areas">Service Areas</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Free Estimate</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#why-us" onclick="closeMenu()">About Us</a>
+  <a href="#areas" onclick="closeMenu()">Service Areas</a>
+  <a href="#testimonials" onclick="closeMenu()">Reviews</a>
+  <a href="#contact" onclick="closeMenu()" class="mobile-cta">Get a Free Estimate</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <div class="hero-badge">Licensed &amp; Insured · Since 2008</div>
+    <h1>Heating &amp; Cooling You Can <span>Rely On</span></h1>
+    <p class="hero-sub">Expert HVAC and electric heating services for homes and businesses across [Your City] and surrounding communities. Same-day service available.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Get a Free Estimate</a>
+      <a href="tel:+1XXXXXXXXXX" class="btn-ghost">Call (XXX) XXX-XXXX</a>
+    </div>
+    <div class="hero-trust">
+      <span class="trust-item">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        Same-Day Service
+      </span>
+      <span class="trust-item">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        Upfront Pricing
+      </span>
+      <span class="trust-item">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        100% Satisfaction Guarantee
+      </span>
+    </div>
+  </div>
+  <div class="hero-card" data-fade>
+    <h3>What We Do</h3>
+    <ul class="hero-services">
+      <li>AC Repair &amp; Installation</li>
+      <li>Electric Heating Systems</li>
+      <li>Heat Pump Service</li>
+      <li>Ductless Mini-Split Systems</li>
+      <li>Seasonal Tune-Ups</li>
+      <li>Emergency Repairs</li>
+    </ul>
+    <div class="hero-stat">
+      <div>
+        <span class="hero-stat-num">15+</span>
+        <span class="hero-stat-label">Years Serving PA</span>
+      </div>
+      <div>
+        <span class="hero-stat-num">2,400+</span>
+        <span class="hero-stat-label">Jobs Completed</span>
+      </div>
+      <div>
+        <span class="hero-stat-num">4.9★</span>
+        <span class="hero-stat-label">Avg. Rating</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-item">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    EPA Certified Technicians
+  </div>
+  <div class="trust-bar-item">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    24/7 Emergency Service
+  </div>
+  <div class="trust-bar-item">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+    Financing Available
+  </div>
+  <div class="trust-bar-item">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    Workmanship Warranty
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-bg" id="services">
+  <div class="section-header center" data-fade>
+    <div class="section-label">What We Offer</div>
+    <h2 class="section-title">HVAC &amp; Electric Heating Services</h2>
+    <p class="section-sub">From a broken AC in the middle of summer to a full electric heating installation, our team handles it all — quickly and at a fair price.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card" data-fade>
+      <div class="service-icon">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10"/><path d="M12 8v4l3 3"/><path d="M18 2v4h4"/></svg>
+      </div>
+      <h3>AC Repair &amp; Diagnostics</h3>
+      <p>System not cooling properly? Our technicians diagnose and repair all major AC brands — fast. We stock common parts so most repairs are completed same visit.</p>
+      <a href="#contact">Request Service →</a>
+    </div>
+    <div class="service-card" data-fade>
+      <div class="service-icon">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <h3>AC Installation</h3>
+      <p>Upgrade to a high-efficiency system sized correctly for your home or business. We carry top brands and provide transparent, itemized quotes before any work begins.</p>
+      <a href="#contact">Get a Quote →</a>
+    </div>
+    <div class="service-card" data-fade>
+      <div class="service-icon">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <h3>Electric Heating</h3>
+      <p>Expert installation and service of baseboard heaters, electric furnaces, and heat pumps. Energy-efficient options available to keep your utility bills in check.</p>
+      <a href="#contact">Learn More →</a>
+    </div>
+    <div class="service-card" data-fade>
+      <div class="service-icon">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <h3>Ductless Mini-Split</h3>
+      <p>Perfect for additions, garages, and older homes without ductwork. Mini-splits offer precise zone control and high efficiency with minimal installation disruption.</p>
+      <a href="#contact">Get a Quote →</a>
+    </div>
+    <div class="service-card" data-fade>
+      <div class="service-icon">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>
+      </div>
+      <h3>Seasonal Tune-Ups</h3>
+      <p>Annual maintenance keeps systems running efficiently, extends equipment life, and catches problems before they become expensive breakdowns. Plans available.</p>
+      <a href="#contact">Schedule Tune-Up →</a>
+    </div>
+    <div class="service-card" data-fade>
+      <div class="service-icon">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <h3>24/7 Emergency Service</h3>
+      <p>AC out in August? Heat down in January? We offer around-the-clock emergency response with no excessive after-hours surcharges. Just honest, fast help when you need it most.</p>
+      <a href="tel:+1XXXXXXXXXX">Call Now →</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why-us">
+  <div class="why-grid">
+    <div>
+      <div class="section-label" data-fade>Why Choose Us</div>
+      <h2 class="section-title" data-fade>A Local Team That Takes Pride in the Work</h2>
+      <div class="why-points">
+        <div class="why-point" data-fade>
+          <div class="why-num">1</div>
+          <div>
+            <h4>Upfront, Honest Pricing</h4>
+            <p>We quote before we work. No surprise charges or upsells after the job starts. The price we give you is the price you pay.</p>
+          </div>
+        </div>
+        <div class="why-point" data-fade>
+          <div class="why-num">2</div>
+          <div>
+            <h4>Technicians Who Show Up On Time</h4>
+            <p>We respect your schedule. Our team arrives in the window given, calls ahead, and treats your home or business with care.</p>
+          </div>
+        </div>
+        <div class="why-point" data-fade>
+          <div class="why-num">3</div>
+          <div>
+            <h4>Work Backed by a Warranty</h4>
+            <p>All repairs and installations are backed by our labor warranty. We stand behind the work we do, period.</p>
+          </div>
+        </div>
+        <div class="why-point" data-fade>
+          <div class="why-num">4</div>
+          <div>
+            <h4>Local &amp; Community-Rooted</h4>
+            <p>We live and work in this area. Our reputation is built neighbor by neighbor, and we intend to keep it that way.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why-visual" data-fade>
+      <h3>Our Credentials</h3>
+      <ul class="cert-list">
+        <li><span class="cert-dot"></span>PA State Contractor License #XXXXXXXX</li>
+        <li><span class="cert-dot"></span>EPA 608 Universal Certified</li>
+        <li><span class="cert-dot"></span>NATE Certified Technicians</li>
+        <li><span class="cert-dot"></span>Fully Bonded &amp; Insured</li>
+        <li><span class="cert-dot"></span>BBB Accredited Business</li>
+        <li><span class="cert-dot"></span>Authorized Carrier &amp; Lennox Dealer</li>
+      </ul>
+      <div class="emergency-box">
+        <p>Emergency line — available 24/7</p>
+        <a href="tel:+1XXXXXXXXXX" class="phone">(XXX) XXX-XXXX</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="areas-bg" id="areas">
+  <div class="section-header center" data-fade>
+    <div class="section-label">Where We Work</div>
+    <h2 class="section-title">Serving [County] County and Beyond</h2>
+    <p class="section-sub">Based in [Your City], we serve the surrounding region including these communities. Not sure if we cover your area? Give us a call.</p>
+  </div>
+  <div class="areas-grid" data-fade>
+    <div class="area-chip">[Your City]</div>
+    <div class="area-chip">[City 2]</div>
+    <div class="area-chip">[City 3]</div>
+    <div class="area-chip">[City 4]</div>
+    <div class="area-chip">[City 5]</div>
+    <div class="area-chip">[City 6]</div>
+    <div class="area-chip">[City 7]</div>
+    <div class="area-chip">[City 8]</div>
+    <div class="area-chip">[City 9]</div>
+    <div class="area-chip">[City 10]</div>
+    <div class="area-chip">[City 11]</div>
+    <div class="area-chip">Surrounding Areas</div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-header center" data-fade>
+    <div class="section-label">Customer Reviews</div>
+    <h2 class="section-title">What Our Customers Say</h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial" data-fade>
+      <div class="stars">★★★★★</div>
+      <p>"Allen Electric came out the same day my AC stopped working in the middle of a heat wave. The tech was professional, explained everything clearly, and had it fixed in two hours. Incredibly fair price too. Will definitely call them again."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">MR</div>
+        <div>
+          <div class="author-name">Michael R.</div>
+          <div class="author-loc">[City], PA · AC Repair</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial" data-fade>
+      <div class="stars">★★★★★</div>
+      <p>"Had a new mini-split installed in our sunroom — couldn't be happier. The crew was on time, clean, and efficient. They walked me through the system operation and answered every question. Top-notch from start to finish."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">SL</div>
+        <div>
+          <div class="author-name">Sandra L.</div>
+          <div class="author-loc">[City], PA · Mini-Split Install</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial" data-fade>
+      <div class="stars">★★★★★</div>
+      <p>"I've used several HVAC companies over the years and Allen Electric is by far the most trustworthy. They give you a real quote, they show up when they say, and they do the job right. No runaround, no upsell pressure."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">DK</div>
+        <div>
+          <div class="author-name">Dave K.</div>
+          <div class="author-loc">[City], PA · Annual Maintenance</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / QUOTE FORM -->
+<section style="background: var(--cream);" id="contact">
+  <div class="section-header" data-fade>
+    <div class="section-label">Contact Us</div>
+    <h2 class="section-title">Get Your Free Estimate</h2>
+    <p class="section-sub">Fill out the form and we'll be in touch within a few hours. For urgent issues, call us directly — we answer 24/7.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info" data-fade>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.5 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.44 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.16 6.16l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Phone</div>
+          <a href="tel:+1XXXXXXXXXX" class="contact-value">(XXX) XXX-XXXX</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Email</div>
+          <a href="mailto:info@allenelectricair.com" class="contact-value">info@allenelectricair.com</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Location</div>
+          <span class="contact-value" style="cursor:default;">[Your City], PA XXXXX</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Business Hours</div>
+          <span class="contact-value" style="cursor:default; font-size:15px;">Mon–Fri 7am–6pm · Sat 8am–4pm</span>
+          <div style="font-size:13px; color:var(--gray); margin-top:2px;">24/7 Emergency Line Available</div>
+        </div>
+      </div>
+    </div>
+    <div class="form-card" data-fade>
+      <h3>Request a Free Estimate</h3>
+      <p class="form-sub">We typically respond within 2–4 hours during business hours.</p>
+      <div id="quote-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name">First Name *</label>
+            <input type="text" id="f-name" placeholder="Jane" required />
+          </div>
+          <div class="form-group">
+            <label for="f-last">Last Name *</label>
+            <input type="text" id="f-last" placeholder="Smith" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-phone">Phone *</label>
+            <input type="tel" id="f-phone" placeholder="(XXX) XXX-XXXX" required />
+          </div>
+          <div class="form-group">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" placeholder="jane@email.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="f-service">Service Needed *</label>
+          <select id="f-service" required>
+            <option value="" disabled selected>Select a service…</option>
+            <option>AC Repair</option>
+            <option>AC Installation / Replacement</option>
+            <option>Electric Heating Repair</option>
+            <option>Electric Heating Installation</option>
+            <option>Ductless Mini-Split</option>
+            <option>Seasonal Tune-Up / Maintenance</option>
+            <option>Emergency Service</option>
+            <option>Other / Not Sure</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="f-address">Service Address</label>
+          <input type="text" id="f-address" placeholder="123 Main St, Your City, PA" />
+        </div>
+        <div class="form-group">
+          <label for="f-message">Describe the Issue or Project</label>
+          <textarea id="f-message" placeholder="e.g. AC stopped blowing cold air, unit is about 10 years old…"></textarea>
+        </div>
+        <button type="button" class="form-submit" onclick="submitForm()">Send My Estimate Request</button>
+        <p class="form-note">By submitting, you agree to be contacted by Allen Electric Heating &amp; Air. We never share your information.</p>
+      </div>
+      <div id="form-success">
+        <p>✓ Request Received!</p>
+        <small>Thank you — a member of our team will be in touch within a few hours. For urgent needs, call (XXX) XXX-XXXX directly.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:.5rem;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32">
+          <polygon points="24,3 39,3 46,16 39,30 24,30 17,16" fill="#1a2e44"/>
+          <clipPath id="lh2"><rect x="0" y="0" width="31" height="48"/></clipPath>
+          <polygon points="24,3 39,3 46,16 39,30 24,30 17,16" fill="#E84C1E" clip-path="url(#lh2)" opacity="0.85"/>
+          <clipPath id="rh2"><rect x="31" y="0" width="48" height="48"/></clipPath>
+          <polygon points="24,3 39,3 46,16 39,30 24,30 17,16" fill="#1E90D8" clip-path="url(#rh2)" opacity="0.85"/>
+          <polygon points="34,6 29,17 33,17 30,28 37,15 33,15 36.5,6" fill="#F5C518"/>
+        </svg>
+        <span style="color:#fff; font-weight:600; font-size:15px;">Allen Electric Heating &amp; Air</span>
+      </div>
+      <p>Trusted HVAC and electric heating professionals serving [Your City] and surrounding Pennsylvania communities since 2008.</p>
+      <p style="margin-top:.75rem; font-size:13px;">License #XXXXXXXX · Fully Insured · BBB Accredited</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">AC Repair</a></li>
+        <li><a href="#services">AC Installation</a></li>
+        <li><a href="#services">Electric Heating</a></li>
+        <li><a href="#services">Mini-Split Systems</a></li>
+        <li><a href="#services">Tune-Ups</a></li>
+        <li><a href="#services">Emergency Service</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#why-us">About Us</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#areas">Service Areas</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></li>
+        <li><a href="mailto:info@allenelectricair.com">info@allenelectricair.com</a></li>
+        <li><a href="#contact">Free Estimate</a></li>
+        <li style="color:rgba(255,255,255,0.4); font-size:13px; margin-top:.5rem;">24/7 Emergency Available</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Allen Electric Heating &amp; Air · All rights reserved</span>
+    <span>✓ Licensed · ✓ Insured · ✓ Satisfaction Guaranteed</span>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => { closeMenu(); });
+});
+function submitForm() {
+  var name = document.getElementById('f-name').value.trim();
+  var phone = document.getElementById('f-phone').value.trim();
+  var service = document.getElementById('f-service').value;
+  if (!name || !phone || !service) {
+    alert('Please fill in your name, phone, and service type.');
+    return;
+  }
+  document.getElementById('quote-form').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+}
+var io = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+document.querySelectorAll('[data-fade]').forEach(function(el) { io.observe(el); });
+</script>
+</body>
+</html>
