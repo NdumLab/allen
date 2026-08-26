@@ -3,54 +3,46 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Allen Electric Heating & Air | HVAC Services – Pittsburgh, PA</title>
-<meta name="description" content="Allen Electric Heating & Air provides expert AC repair, installation, and electric heating services in Pittsburgh and Western PA. 30 years experience. Licensed & insured. Free estimates. Call (412) 774-4086." />
+<title>Allen Electric Heating & Air | Heating, Cooling & Electrical – Pittsburgh, PA</title>
+<meta name="description" content="Allen Electric Heating & Air provides heating and AC installation and repair, 220 volt line installation, and 100/200 amp panel installation across Pittsburgh and Western PA. 30 years experience. Licensed & insured. Free estimates. Call (412) 201-0796." />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://ndumlab.github.io/allen/" />
+<link rel="canonical" href="https://allenehaa.com/" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Allen Electric Heating & Air | HVAC – Pittsburgh, PA" />
-<meta property="og:description" content="30 years of trusted HVAC and electric heating service across Pittsburgh and Western PA. Free estimates. Call (412) 774-4086." />
-<meta property="og:url" content="https://ndumlab.github.io/allen/" />
+<meta property="og:title" content="Allen Electric Heating & Air | Heating, Cooling & Electrical – Pittsburgh, PA" />
+<meta property="og:description" content="30 years of trusted heating, cooling and electrical service across Pittsburgh and Western PA. Free estimates. Call (412) 201-0796." />
+<meta property="og:url" content="https://allenehaa.com/" />
 <meta property="og:image" content="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1200&q=80" />
 <meta property="og:site_name" content="Allen Electric Heating & Air" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Allen Electric Heating & Air | HVAC – Pittsburgh, PA" />
-<meta name="twitter:description" content="30 years of trusted HVAC service across Pittsburgh and Western PA. Free estimates." />
+<meta name="twitter:title" content="Allen Electric Heating & Air | Heating, Cooling & Electrical – Pittsburgh, PA" />
+<meta name="twitter:description" content="30 years of trusted heating, cooling and electrical service across Pittsburgh and Western PA." />
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1200&q=80" />
 
 <!-- LocalBusiness Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HVACBusiness",
+  "@type": ["HVACBusiness", "Electrician"],
   "name": "Allen Electric Heating & Air",
   "image": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80",
-  "url": "https://ndumlab.github.io/allen/",
-  "telephone": "+14127744086",
-  "email": "bessiusa@yahoo.com",
+  "url": "https://allenehaa.com/",
+  "telephone": "+14122010796",
+  "email": "customersupport@allenehaa.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "1538 Graham Blvd",
     "addressLocality": "Pittsburgh",
     "addressRegion": "PA",
-    "postalCode": "15235",
     "addressCountry": "US"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 40.4580,
-    "longitude": -79.8673
-  },
   "openingHoursSpecification": [
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"},
-    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"16:00"}
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}
   ],
   "priceRange": "$$",
-  "description": "Allen Electric Heating & Air provides expert HVAC, AC repair, installation, and electric heating services across Pittsburgh and Western Pennsylvania. 30 years of trusted local service.",
+  "description": "Allen Electric Heating & Air provides heating equipment installation and repair, AC installation and repair, 220 volt line installation, and 100 and 200 amp panel installation across Pittsburgh and Western Pennsylvania. 30 years of trusted local service.",
   "foundingDate": "1994",
   "areaServed": [
     "Pittsburgh","Allegheny County","Mt. Lebanon","Bethel Park","Canonsburg","Washington PA",
@@ -59,14 +51,14 @@
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "HVAC Services",
+    "name": "Heating, Cooling & Electrical Services",
     "itemListElement": [
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"AC Repair"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"AC Installation"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Electric Heating Service"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Heating Equipment Installation and Repair (All Brands)"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"AC Installation and Repair (All Brands)"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"220 Volt Line Installation"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"100 and 200 Amp Panel Installation"}},
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Ductless Mini-Split Installation"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Seasonal HVAC Tune-Up"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"24/7 Emergency HVAC Service"}}
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Seasonal Tune-Up and Maintenance"}}
     ]
   },
   "sameAs": [
@@ -147,7 +139,15 @@ nav{position:sticky;top:0;z-index:100;background:var(--navy);display:flex;align-
 
 /* PHOTO STRIP */
 .photo-strip{display:grid;grid-template-columns:repeat(4,1fr);height:220px;overflow:hidden;}
-.photo-strip-item{overflow:hidden;position:relative;}
+.photo-strip-item{overflow:hidden;position:relative;display:block;text-decoration:none;cursor:pointer;}
+.reviews-empty{max-width:680px;margin:0 auto;text-align:center;}
+.reviews-empty p{font-size:16px;line-height:1.7;color:var(--gray);margin:0 0 .9rem;}
+.services-callout{max-width:640px;margin:2.5rem auto 0;text-align:center;background:#fff;border:1px solid rgba(13,27,42,.1);border-radius:12px;padding:1.5rem 1.25rem;}
+.services-callout p{font-size:16px;color:var(--navy);margin:0 0 .5rem;}
+.services-callout-phone{display:inline-block;font-family:var(--font-display);font-size:26px;font-weight:700;color:var(--red);text-decoration:none;letter-spacing:-.01em;}
+.services-callout-phone:hover{color:var(--red-dark);}
+.hero-services-note{font-size:13px;color:var(--gray);margin-top:.75rem;line-height:1.5;}
+.hero-services-note a{color:var(--red);font-weight:600;text-decoration:none;}
 .photo-strip-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
 .photo-strip-item:hover img{transform:scale(1.06);}
 .photo-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(13,27,42,.85));padding:1rem .75rem .75rem;color:#fff;font-size:13px;font-weight:600;}
@@ -247,6 +247,12 @@ section{padding:80px 5%;}
 .form-group textarea{resize:vertical;min-height:100px;}
 .form-submit{width:100%;padding:14px;background:var(--red);color:#fff;border:none;border-radius:8px;font-family:var(--font-body);font-size:16px;font-weight:600;cursor:pointer;transition:background .2s;margin-top:.5rem;}
 .form-submit:hover{background:var(--red-dark);}
+.form-submit-alt{width:100%;padding:12px;background:transparent;color:var(--navy);border:1.5px solid rgba(13,27,42,.18);border-radius:8px;font-family:var(--font-body);font-size:15px;font-weight:600;cursor:pointer;transition:border-color .2s,background .2s;margin-top:.6rem;}
+.form-submit-alt:hover{background:rgba(13,27,42,.04);border-color:rgba(13,27,42,.35);}
+@media(max-width:640px){
+  #wa-widget{width:auto;left:12px;right:12px;bottom:78px;}
+  #wa-bubble{font-size:12px;padding:8px 13px;}
+}
 .form-note{font-size:12px;color:var(--gray);text-align:center;margin-top:.75rem;}
 #form-success{display:none;background:#ecfdf5;border:1px solid #6ee7b7;border-radius:10px;padding:1.5rem;text-align:center;}
 #form-success p{color:#065f46;font-weight:600;font-size:16px;margin-bottom:.5rem;}
@@ -295,7 +301,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
 <!-- LOCAL DETECTION BANNER -->
 <div id="local-banner">
   <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-  <span id="banner-text">Serving <strong>Pittsburgh</strong> and all of Western PA — Fast, local HVAC you can trust.</span>
+  <span id="banner-text">Serving <strong>Pittsburgh</strong> and all of Western PA — Fast, local heating, cooling &amp; electrical you can trust.</span>
 </div>
 
 <nav>
@@ -317,7 +323,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
     <li><a href="#testimonials">Reviews</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="tel:4127744086" class="nav-cta">📞 (412) 774-4086</a>
+  <a href="tel:4122010796" class="nav-cta">📞 (412) 201-0796</a>
   <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
 </nav>
 
@@ -326,7 +332,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
   <a href="#why-us" onclick="closeMenu()">About Us</a>
   <a href="#areas" onclick="closeMenu()">Service Areas</a>
   <a href="#testimonials" onclick="closeMenu()">Reviews</a>
-  <a href="#contact" onclick="closeMenu()" class="mobile-cta">Get a Free Estimate</a>
+  <a href="#contact" onclick="closeMenu()" class="mobile-cta">Book a Service</a>
 </div>
 
 <!-- HERO -->
@@ -335,11 +341,11 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
   <div class="hero-inner">
     <div>
       <div class="hero-badge">30 Years Serving Pittsburgh &amp; Western PA · Licensed &amp; Insured</div>
-      <h1>Pittsburgh's Trusted <span>Heating &amp; Cooling</span> Experts</h1>
-      <p class="hero-sub" id="hero-sub">Expert HVAC and electric heating services for homes and businesses across Pittsburgh and all of Western Pennsylvania. Same-day service available.</p>
+      <h1>Pittsburgh's Trusted <span>Heating, Cooling &amp; Electrical</span> Experts</h1>
+      <p class="hero-sub" id="hero-sub">Heating and AC installation and repair on all brands, plus 220 volt lines and electrical panel upgrades — for homes and businesses across Pittsburgh and all of Western Pennsylvania.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Get a Free Estimate</a>
-        <a href="tel:4127744086" class="btn-ghost">Call (412) 774-4086</a>
+        <a href="#contact" class="btn-primary">Book a Service</a>
+        <a href="tel:4122010796" class="btn-ghost">Call (412) 201-0796</a>
       </div>
       <div class="hero-trust">
         <span class="trust-item"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Same-Day Service</span>
@@ -350,17 +356,16 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
     <div class="hero-card" data-fade>
       <h3>What We Do</h3>
       <ul class="hero-services">
-        <li>AC Repair &amp; Installation</li>
-        <li>Electric Heating Systems</li>
-        <li>Heat Pump Service</li>
-        <li>Ductless Mini-Split Systems</li>
-        <li>Seasonal Tune-Ups</li>
-        <li>Emergency Repairs</li>
+        <li>Heating equipment installation &amp; repairs (all brands)</li>
+        <li>AC installation &amp; repairs (all brands)</li>
+        <li>220 volt line installation</li>
+        <li>100 and 200 amp panel installation</li>
       </ul>
+      <p class="hero-services-note">Don't see the service you need? Give us a call at <a href="tel:4122010796">(412) 201-0796</a>.</p>
       <div class="hero-stat">
         <div><span class="hero-stat-num">30+</span><span class="hero-stat-label">Years in PA</span></div>
         <div><span class="hero-stat-num">5,000+</span><span class="hero-stat-label">Jobs Done</span></div>
-        <div><span class="hero-stat-num">4.9★</span><span class="hero-stat-label">Avg. Rating</span></div>
+        <div><span class="hero-stat-num">5.0★</span><span class="hero-stat-label">Avg. Rating</span></div>
       </div>
     </div>
   </div>
@@ -368,82 +373,86 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
-  <div class="trust-bar-item"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>EPA Certified Technicians</div>
-  <div class="trust-bar-item"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>24/7 Emergency Service</div>
+  <div class="trust-bar-item"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Licensed &amp; Fully Insured</div>
+  <div class="trust-bar-item"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Emergency Response</div>
   <div class="trust-bar-item"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Financing Available</div>
-  <div class="trust-bar-item"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Workmanship Warranty</div>
+  <div class="trust-bar-item"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>10-Year Equipment Warranty</div>
 </div>
 
 <!-- PHOTO STRIP -->
 <div class="photo-strip">
-  <div class="photo-strip-item"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="HVAC technician repairing air conditioning unit in Pittsburgh" loading="lazy"/><div class="photo-label">AC Repair</div></div>
-  <div class="photo-strip-item"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="New HVAC system installation Western PA" loading="lazy"/><div class="photo-label">System Installation</div></div>
-  <div class="photo-strip-item"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Electric heating service Pittsburgh" loading="lazy"/><div class="photo-label">Heating Service</div></div>
-  <div class="photo-strip-item"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80" alt="Satisfied Pittsburgh HVAC customer" loading="lazy"/><div class="photo-label">Happy Customers</div></div>
+  <a href="#svc-ac" class="photo-strip-item"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Air conditioning repair technician in Pittsburgh" loading="lazy"/><div class="photo-label">AC Repair</div></a>
+  <a href="#svc-panel" class="photo-strip-item"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="New heating and cooling system installation Western PA" loading="lazy"/><div class="photo-label">System Installation</div></a>
+  <a href="#svc-heating" class="photo-strip-item"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Heating equipment service Pittsburgh" loading="lazy"/><div class="photo-label">Heating Service</div></a>
+  <a href="#testimonials" class="photo-strip-item"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80" alt="Satisfied Pittsburgh heating and cooling customer" loading="lazy"/><div class="photo-label">Happy Customers</div></a>
 </div>
 
 <!-- SERVICES -->
 <section class="services-bg" id="services">
   <div class="section-header center" data-fade>
-    <div class="section-label">What We Offer</div>
-    <h2 class="section-title">HVAC &amp; Electric Heating Services in <span id="services-city">Pittsburgh</span></h2>
-    <p class="section-sub">From a broken AC in summer to a full electric heating installation — our team handles it all quickly and at a fair price.</p>
+    <div class="section-label">What We Do</div>
+    <h2 class="section-title">Heating, Cooling &amp; Electrical Services in <span id="services-city">Pittsburgh</span></h2>
+    <p class="section-sub">From a furnace that won't fire to a full electrical panel upgrade &mdash; our team handles it all quickly and at a fair price.</p>
   </div>
   <div class="services-grid">
-    <div class="service-card" data-fade>
-      <div class="service-card-img"><img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80" alt="AC repair technician Pittsburgh" loading="lazy"/></div>
+    <div class="service-card" id="svc-heating" data-fade>
+      <div class="service-card-img"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Heating equipment installation and repair Pittsburgh PA" loading="lazy"/></div>
       <div class="service-card-body">
-        <div class="service-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
-        <h3>AC Repair &amp; Diagnostics</h3>
-        <p>System not cooling? We diagnose and repair all major AC brands — fast. Most repairs completed same visit with parts on hand.</p>
-        <a href="#contact">Request Service →</a>
+        <div class="service-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2s4 4.5 4 8a4 4 0 0 1-8 0c0-3.5 4-8 4-8z"/><path d="M5 22h14"/><path d="M7 18h10"/></svg></div>
+        <h3>Heating Equipment Installation &amp; Repairs</h3>
+        <p>Furnaces, electric heat, and heat pumps &mdash; installed, serviced, and repaired on <strong>all brands</strong>. Western PA winters don't wait, and neither do we.</p>
+        <a href="#contact">Book a Service &rarr;</a>
       </div>
     </div>
-    <div class="service-card" data-fade>
-      <div class="service-card-img"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="New AC system installation Pittsburgh PA" loading="lazy"/></div>
+    <div class="service-card" id="svc-ac" data-fade>
+      <div class="service-card-img"><img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80" alt="Air conditioning installation and repair technician Pittsburgh" loading="lazy"/></div>
       <div class="service-card-body">
-        <div class="service-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-        <h3>AC Installation</h3>
-        <p>Upgrade to a high-efficiency system sized correctly for your home. Transparent itemized quotes before any work begins.</p>
-        <a href="#contact">Get a Quote →</a>
+        <div class="service-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="9" rx="2"/><line x1="6" y1="17" x2="6" y2="20"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="18" y1="17" x2="18" y2="20"/></svg></div>
+        <h3>AC Installation &amp; Repairs</h3>
+        <p>Not cooling? We diagnose and repair <strong>all brands</strong>, and install high-efficiency systems sized correctly for your home. Itemized estimate before any work begins.</p>
+        <a href="#contact">Book a Service &rarr;</a>
       </div>
     </div>
-    <div class="service-card" data-fade>
-      <div class="service-card-img"><img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80" alt="Electric heating service Western Pennsylvania" loading="lazy"/></div>
+    <div class="service-card" id="svc-220" data-fade>
+      <div class="service-card-img"><img src="https://images.unsplash.com/photo-1660330589693-99889d60181e?w=600&q=80" alt="Electrician installing a 220 volt line in a Pittsburgh home" loading="lazy"/></div>
       <div class="service-card-body">
         <div class="service-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-        <h3>Electric Heating</h3>
-        <p>Expert installation and service of baseboard heaters, electric furnaces, and heat pumps. Energy-efficient options to lower your bills.</p>
-        <a href="#contact">Learn More →</a>
+        <h3>220 Volt Line Installation</h3>
+        <p>Dedicated 220V circuits for ranges, dryers, EV chargers, welders, and workshop equipment. Code-compliant, permitted, and inspected.</p>
+        <a href="#contact">Book a Service &rarr;</a>
       </div>
     </div>
-    <div class="service-card" data-fade>
-      <div class="service-card-img"><img src="https://images.unsplash.com/photo-1625961332771-3f40b0e2bdcf?w=600&q=80" alt="Ductless mini split Pittsburgh home" loading="lazy"/></div>
+    <div class="service-card" id="svc-panel" data-fade>
+      <div class="service-card-img"><img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?w=600&q=80" alt="100 and 200 amp electrical panel installation Western Pennsylvania" loading="lazy"/></div>
+      <div class="service-card-body">
+        <div class="service-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="17" x2="16" y2="17"/></svg></div>
+        <h3>100 &amp; 200 Amp Panel Installation</h3>
+        <p>Upgrading from an undersized or aging panel gives your home the capacity for modern appliances, heat pumps, and EV charging &mdash; safely.</p>
+        <a href="#contact">Book a Service &rarr;</a>
+      </div>
+    </div>
+    <div class="service-card" id="svc-minisplit" data-fade>
+      <div class="service-card-img"><img src="https://images.unsplash.com/photo-1625961332771-3f40b0e2bdcf?w=600&q=80" alt="Ductless mini split installation Pittsburgh home" loading="lazy"/></div>
       <div class="service-card-body">
         <div class="service-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
-        <h3>Ductless Mini-Split</h3>
-        <p>Perfect for additions, garages, and older Pittsburgh homes without ductwork. Precise zone control with minimal installation disruption.</p>
-        <a href="#contact">Get a Quote →</a>
+        <h3>Ductless Mini-Split Systems</h3>
+        <p>Ideal for additions, garages, and older Pittsburgh homes without ductwork. Precise zone control with minimal disruption to the house.</p>
+        <a href="#contact">Book a Service &rarr;</a>
       </div>
     </div>
-    <div class="service-card" data-fade>
-      <div class="service-card-img"><img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80" alt="HVAC seasonal tune-up maintenance" loading="lazy"/></div>
+    <div class="service-card" id="svc-tuneup" data-fade>
+      <div class="service-card-img"><img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80" alt="Seasonal heating and cooling tune-up and maintenance Pittsburgh" loading="lazy"/></div>
       <div class="service-card-body">
         <div class="service-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg></div>
-        <h3>Seasonal Tune-Ups</h3>
-        <p>Annual maintenance extends equipment life and catches problems early. Western PA winters demand reliable heat — don't wait.</p>
-        <a href="#contact">Schedule Now →</a>
+        <h3>Seasonal Tune-Ups &amp; Maintenance</h3>
+        <p>Annual maintenance extends equipment life and catches small problems before they become emergencies. Worth booking before the season turns.</p>
+        <a href="#contact">Book a Service &rarr;</a>
       </div>
     </div>
-    <div class="service-card" data-fade>
-      <div class="service-card-img"><img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80" alt="24/7 emergency HVAC service Pittsburgh" loading="lazy"/></div>
-      <div class="service-card-body">
-        <div class="service-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
-        <h3>24/7 Emergency Service</h3>
-        <p>AC out in August? Heat down in January? We respond around the clock across Pittsburgh and the region. No excessive surcharges.</p>
-        <a href="tel:4127744086">Call (412) 774-4086 →</a>
-      </div>
-    </div>
+  </div>
+  <div class="services-callout" data-fade>
+    <p>If you don't see the service you need, <strong>give us a call!</strong></p>
+    <a href="tel:4122010796" class="services-callout-phone">(412) 201-0796</a>
   </div>
 </section>
 
@@ -454,9 +463,9 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
       <div class="section-label" data-fade>Why Choose Us</div>
       <h2 class="section-title" data-fade>30 Years of Trusted Service in Western PA</h2>
       <div class="why-points">
-        <div class="why-point" data-fade><div class="why-num">1</div><div><h4>Upfront, Honest Pricing</h4><p>We quote before we work. No surprise charges or upsells after the job starts. The price we give you is the price you pay.</p></div></div>
+        <div class="why-point" data-fade><div class="why-num">1</div><div><h4>Upfront, Honest Pricing</h4><p>You get a written estimate before we work &mdash; no surprise charges or upsells after the job starts. Clear pricing. No surprises.</p></div></div>
         <div class="why-point" data-fade><div class="why-num">2</div><div><h4>Technicians Who Show Up On Time</h4><p>We respect your schedule. Our team arrives in the given window, calls ahead, and treats your home with care.</p></div></div>
-        <div class="why-point" data-fade><div class="why-num">3</div><div><h4>Work Backed by a Warranty</h4><p>All repairs and installations are backed by our labor warranty. We stand behind the work we do, period.</p></div></div>
+        <div class="why-point" data-fade><div class="why-num">3</div><div><h4>10-Year Manufacturer's Warranty</h4><p>All new equipment installations &mdash; furnaces and ACs &mdash; carry a 10 year manufacturer's warranty. We stand behind the work we do, period.</p></div></div>
         <div class="why-point" data-fade><div class="why-num">4</div><div><h4>Local &amp; Pittsburgh-Rooted</h4><p>We've called Pittsburgh home for 30 years. Our reputation is built neighbor by neighbor and we intend to keep it that way.</p></div></div>
       </div>
     </div>
@@ -466,15 +475,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
         <h3>Our Credentials</h3>
         <ul class="cert-list">
           <li><span class="cert-dot"></span>PA State Contractor License</li>
-          <li><span class="cert-dot"></span>EPA 608 Universal Certified</li>
-          <li><span class="cert-dot"></span>NATE Certified Technicians</li>
-          <li><span class="cert-dot"></span>Fully Bonded &amp; Insured</li>
-          <li><span class="cert-dot"></span>BBB Accredited Business</li>
-          <li><span class="cert-dot"></span>Authorized Carrier &amp; Lennox Dealer</li>
+          <li><span class="cert-dot"></span>Fully Insured</li>
+          <li><span class="cert-dot"></span>Authorized Lennox Dealer</li>
         </ul>
         <div class="emergency-box">
-          <p>Emergency line — available 24/7</p>
-          <a href="tel:4127744086" class="phone">(412) 774-4086</a>
+          <p>Need emergency response? Call us.</p>
+          <a href="tel:4122010796" class="phone">(412) 201-0796</a>
         </div>
       </div>
     </div>
@@ -486,7 +492,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
   <div class="section-header center" data-fade>
     <div class="section-label">Where We Work</div>
     <h2 class="section-title">Serving Pittsburgh &amp; All of Western PA</h2>
-    <p class="section-sub">Based at 1538 Graham Blvd, Pittsburgh PA 15235 — we serve communities within roughly 2 hours in every direction.</p>
+    <p class="section-sub">Based in Pittsburgh &mdash; we serve communities within roughly 2 hours in every direction.</p>
   </div>
   <div class="areas-grid" data-fade id="areas-grid">
     <div class="area-chip home">Pittsburgh ★</div>
@@ -548,30 +554,17 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
 <section id="testimonials">
   <div class="section-header center" data-fade>
     <div class="section-label">Customer Reviews</div>
-    <h2 class="section-title">What <span id="reviews-city">Pittsburgh</span> Neighbors Say</h2>
+    <h2 class="section-title">Trusted by <span id="reviews-city">Pittsburgh</span> Neighbors</h2>
   </div>
-  <div class="testimonials-grid">
-    <div class="testimonial" data-fade>
-      <div class="stars">★★★★★</div>
-      <p>"Allen Electric came out the same day my AC stopped working in the middle of a heat wave. The tech was professional, explained everything clearly, and had it fixed in two hours. Incredibly fair price. Will call them again."</p>
-      <div class="testimonial-author"><div class="author-avatar">MR</div><div><div class="author-name">Michael R.</div><div class="author-loc">Bethel Park, PA · AC Repair</div></div></div>
-    </div>
-    <div class="testimonial" data-fade>
-      <div class="stars">★★★★★</div>
-      <p>"Had a new mini-split installed in our sunroom — couldn't be happier. On time, clean, and efficient. They walked me through the whole system. Top-notch from start to finish."</p>
-      <div class="testimonial-author"><div class="author-avatar">SL</div><div><div class="author-name">Sandra L.</div><div class="author-loc">Cranberry Twp, PA · Mini-Split Install</div></div></div>
-    </div>
-    <div class="testimonial" data-fade>
-      <div class="stars">★★★★★</div>
-      <p>"I've used several HVAC companies and Allen Electric is by far the most trustworthy. Real quotes, show up when they say, do the job right. No runaround, no upsell pressure. My go-to from now on."</p>
-      <div class="testimonial-author"><div class="author-avatar">DK</div><div><div class="author-name">Dave K.</div><div class="author-loc">Mt. Lebanon, PA · Annual Maintenance</div></div></div>
-    </div>
+  <div class="reviews-empty" data-fade>
+    <p>We're a small, family-run shop that has served Pittsburgh for 30 years &mdash; most of our work comes from neighbors telling neighbors.</p>
+    <p>We're building our Google review page now. If we've worked on your home, we'd be grateful if you shared your experience below.</p>
   </div>
 
   <!-- REVIEW CTA -->
   <div class="review-cta-box" data-fade>
     <h3>Had a Great Experience? Leave Us a Review!</h3>
-    <p>Your review helps other Pittsburgh-area homeowners find trusted HVAC service. It takes less than 2 minutes and means the world to our small local team.</p>
+    <p>Your review helps other Pittsburgh-area homeowners find trusted local service. It takes less than 2 minutes and means the world to our small family team.</p>
     <div class="review-btns">
       <a href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review" target="_blank" rel="noopener" class="review-btn review-btn-google">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
@@ -589,8 +582,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
 <section style="background:var(--cream);" id="contact">
   <div class="section-header" data-fade>
     <div class="section-label">Contact Us</div>
-    <h2 class="section-title">Get Your Free Estimate</h2>
-    <p class="section-sub">Fill out the form and we'll be in touch within a few hours. For urgent issues, call or WhatsApp us directly — we answer 24/7.</p>
+    <h2 class="section-title">Book a Service</h2>
+    <p class="section-sub">Tell us what you need and we'll get back to you within a few hours during business hours. For urgent issues, call or WhatsApp us directly.</p>
   </div>
   <div class="contact-grid">
     <div class="contact-info" data-fade>
@@ -598,7 +591,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
         <div class="contact-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.5 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.44 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.16 6.16l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
         <div>
           <div class="contact-label">Phone</div>
-          <a href="tel:4127744086" class="contact-value">(412) 774-4086</a>
+          <a href="tel:4122010796" class="contact-value">(412) 201-0796</a>
         </div>
       </div>
       <div class="contact-item">
@@ -607,8 +600,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
         </div>
         <div>
           <div class="contact-label">WhatsApp</div>
-          <a href="https://wa.me/14127744086?text=Hi%21+I+found+you+online+and+need+HVAC+help.+Can+you+assist%3F" target="_blank" class="contact-value">Chat on WhatsApp</a>
-          <a href="https://wa.me/14127744086?text=Hi%21+I+found+you+online+and+need+HVAC+help.+Can+you+assist%3F" target="_blank" class="whatsapp-btn">
+          <a href="https://wa.me/14122010796?text=Hi%21+I+found+you+online+and+need+HVAC+help.+Can+you+assist%3F" target="_blank" class="contact-value">Chat on WhatsApp</a>
+          <a href="https://wa.me/14122010796?text=Hi%21+I+found+you+online+and+need+HVAC+help.+Can+you+assist%3F" target="_blank" class="whatsapp-btn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.994 0C5.372 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.83L0 24l6.335-1.502A11.94 11.94 0 0 0 12 24c6.628 0 12-5.373 12-12S18.622 0 11.994 0zm.006 21.818a9.818 9.818 0 0 1-5.001-1.366l-.359-.213-3.72.882.939-3.618-.234-.372A9.818 9.818 0 1 1 12 21.818z"/></svg>
             Message Us on WhatsApp
           </a>
@@ -618,29 +611,21 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
         <div class="contact-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
         <div>
           <div class="contact-label">Email</div>
-          <a href="mailto:bessiusa@yahoo.com" class="contact-value">bessiusa@yahoo.com</a>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <div>
-          <div class="contact-label">Address</div>
-          <span class="contact-value" style="cursor:default;font-size:15px;">1538 Graham Blvd</span>
-          <span style="font-size:14px;color:var(--gray);">Pittsburgh, PA 15235</span>
+          <a href="mailto:customersupport@allenehaa.com" class="contact-value">customersupport@allenehaa.com</a>
         </div>
       </div>
       <div class="contact-item">
         <div class="contact-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
         <div>
           <div class="contact-label">Business Hours</div>
-          <span class="contact-value" style="cursor:default;font-size:15px;">Mon–Fri 7am–6pm · Sat 8am–4pm</span>
-          <div style="font-size:13px;color:var(--gray);margin-top:2px;">24/7 Emergency Line Available</div>
+          <span class="contact-value" style="cursor:default;font-size:15px;">Monday–Friday 8am–6pm</span>
+          <div style="font-size:13px;color:var(--gray);margin-top:2px;">Emergency response available</div>
         </div>
       </div>
     </div>
     <div class="form-card" data-fade>
-      <h3>Request a Free Estimate</h3>
-      <p class="form-sub">We typically respond within 2–4 hours during business hours.</p>
+      <h3>Book a Service</h3>
+      <p class="form-sub">Fill this in and we'll open WhatsApp with your details ready to send. We typically respond within 2–4 hours during business hours.</p>
       <div id="quote-form">
         <div class="form-row">
           <div class="form-group"><label for="f-name">First Name *</label><input type="text" id="f-name" placeholder="Jane" required/></div>
@@ -654,24 +639,49 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
           <label for="f-service">Service Needed *</label>
           <select id="f-service" required>
             <option value="" disabled selected>Select a service…</option>
+            <option>Heating Repair</option>
+            <option>Heating Equipment Installation</option>
             <option>AC Repair</option>
             <option>AC Installation / Replacement</option>
-            <option>Electric Heating Repair</option>
-            <option>Electric Heating Installation</option>
+            <option>220 Volt Line Installation</option>
+            <option>100 or 200 Amp Panel Installation</option>
             <option>Ductless Mini-Split</option>
             <option>Seasonal Tune-Up / Maintenance</option>
-            <option>Emergency Service</option>
+            <option>Emergency Response</option>
+            <option>Free Estimate on New Equipment</option>
             <option>Other / Not Sure</option>
           </select>
         </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-urgency">How urgent is it? *</label>
+            <select id="f-urgency" required>
+              <option value="" disabled selected>Select…</option>
+              <option>Emergency — no heat / no cooling right now</option>
+              <option>Soon — within a few days</option>
+              <option>Flexible — planning ahead</option>
+              <option>Just want an estimate</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-when">Best time to reach you</label>
+            <select id="f-when">
+              <option value="" selected>No preference</option>
+              <option>Morning (8am–12pm)</option>
+              <option>Afternoon (12pm–4pm)</option>
+              <option>Late afternoon (4pm–6pm)</option>
+            </select>
+          </div>
+        </div>
         <div class="form-group"><label for="f-address">Service Address</label><input type="text" id="f-address" placeholder="123 Main St, Pittsburgh, PA"/></div>
-        <div class="form-group"><label for="f-message">Describe the Issue</label><textarea id="f-message" placeholder="e.g. AC stopped blowing cold air, unit is about 10 years old…"></textarea></div>
-        <button type="button" class="form-submit" onclick="submitForm()">Send My Estimate Request</button>
-        <p class="form-note">By submitting, you agree to be contacted by Allen Electric Heating &amp; Air. We never share your information.</p>
+        <div class="form-group"><label for="f-message">What's going on?</label><textarea id="f-message" placeholder="e.g. Furnace won't fire, about 12 years old. Or: need an estimate on a 200 amp panel."></textarea></div>
+        <button type="button" class="form-submit" onclick="submitForm()">Send via WhatsApp</button>
+        <button type="button" class="form-submit-alt" onclick="submitForm('sms')">Send as a Text Message Instead</button>
+        <p class="form-note">Opens WhatsApp (or your messaging app) with your details filled in — you just hit send. By submitting, you agree to be contacted by Allen Electric Heating &amp; Air. We never share your information.</p>
       </div>
       <div id="form-success">
-        <p>✓ Request Received!</p>
-        <small>Thank you — we'll be in touch within a few hours. For urgent needs, call <a href="tel:4127744086" style="color:#047857;">(412) 774-4086</a> or <a href="https://wa.me/14127744086?text=Hi%21+I+found+you+online+and+need+HVAC+help.+Can+you+assist%3F" style="color:#047857;">WhatsApp us</a>.</small>
+        <p>✓ Almost there — hit send!</p>
+        <small>Your message should have opened in WhatsApp or your texting app with all your details filled in. <strong>Press send to reach us.</strong> If nothing opened, call <a href="tel:4122010796" style="color:#047857;">(412) 201-0796</a> or email <a href="mailto:customersupport@allenehaa.com" style="color:#047857;">customersupport@allenehaa.com</a>.</small>
       </div>
     </div>
   </div>
@@ -692,18 +702,18 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
         </svg>
         <span style="color:#fff;font-weight:600;font-size:15px;">Allen Electric Heating &amp; Air</span>
       </div>
-      <p>30 years of trusted HVAC and electric heating service across Pittsburgh and Western Pennsylvania. Fast, fair, and local.</p>
-      <p style="margin-top:.75rem;font-size:13px;">1538 Graham Blvd, Pittsburgh PA 15235 · PA Licensed · Fully Insured</p>
+      <p>30 years of trusted heating, cooling and electrical service across Pittsburgh and Western Pennsylvania. Fast, fair, and local.</p>
+      <p style="margin-top:.75rem;font-size:13px;">Pittsburgh, PA · PA Licensed · Fully Insured · Authorized Lennox Dealer</p>
     </div>
     <div class="footer-col">
       <h4>Services</h4>
       <ul>
-        <li><a href="#services">AC Repair</a></li>
-        <li><a href="#services">AC Installation</a></li>
-        <li><a href="#services">Electric Heating</a></li>
-        <li><a href="#services">Mini-Split Systems</a></li>
-        <li><a href="#services">Tune-Ups</a></li>
-        <li><a href="#services">Emergency Service</a></li>
+        <li><a href="#svc-heating">Heating Installation &amp; Repair</a></li>
+        <li><a href="#svc-ac">AC Installation &amp; Repair</a></li>
+        <li><a href="#svc-220">220 Volt Line Installation</a></li>
+        <li><a href="#svc-panel">100 &amp; 200 Amp Panels</a></li>
+        <li><a href="#svc-minisplit">Mini-Split Systems</a></li>
+        <li><a href="#svc-tuneup">Tune-Ups</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -718,12 +728,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
     <div class="footer-col">
       <h4>Get in Touch</h4>
       <ul>
-        <li><a href="tel:4127744086">(412) 774-4086</a></li>
-        <li><a href="https://wa.me/14127744086?text=Hi%21+I+found+you+online+and+need+HVAC+help.+Can+you+assist%3F" target="_blank">WhatsApp Us</a></li>
-        <li><a href="mailto:bessiusa@yahoo.com">bessiusa@yahoo.com</a></li>
-        <li><a href="#contact">Free Estimate</a></li>
+        <li><a href="tel:4122010796">(412) 201-0796</a></li>
+        <li><a href="https://wa.me/14122010796?text=Hi%21+I+found+you+online+and+need+HVAC+help.+Can+you+assist%3F" target="_blank">WhatsApp Us</a></li>
+        <li><a href="mailto:customersupport@allenehaa.com">customersupport@allenehaa.com</a></li>
+        <li><a href="#contact">Book a Service</a></li>
       </ul>
-      <p style="font-size:12px;color:rgba(255,255,255,.35);margin-top:.75rem;">24/7 Emergency Available</p>
+      <p style="font-size:12px;color:rgba(255,255,255,.35);margin-top:.75rem;">Emergency response available</p>
     </div>
   </div>
   <div class="footer-bottom">
@@ -733,7 +743,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 5% 2rem;}
 </footer>
 
 <!-- WHATSAPP FLOATING BUTTON -->
-<a href="https://wa.me/14127744086?text=Hi%21+I+found+you+online+and+need+HVAC+help.+Can+you+assist%3F" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/14122010796?text=Hi%21+I+found+you+online+and+need+HVAC+help.+Can+you+assist%3F" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.994 0C5.372 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.83L0 24l6.335-1.502A11.94 11.94 0 0 0 12 24c6.628 0 12-5.373 12-12S18.622 0 11.994 0zm.006 21.818a9.818 9.818 0 0 1-5.001-1.366l-.359-.213-3.72.882.939-3.618-.234-.372A9.818 9.818 0 1 1 12 21.818z"/></svg>
 </a>
 
@@ -807,18 +817,63 @@ function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('op
 function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');}
 
 // ── FORM ────────────────────────────────────────────────────
-function submitForm(){
-  var name=document.getElementById('f-name').value.trim();
-  var phone=document.getElementById('f-phone').value.trim();
-  var service=document.getElementById('f-service').value;
-  if(!name||!phone||!service){alert('Please fill in your name, phone, and service type.');return;}
+var BIZ_PHONE_E164 = '14122010796';
+var BIZ_PHONE_SMS  = '+14122010796';
+
+function submitForm(channel){
+  function v(id){ var el=document.getElementById(id); return el ? el.value.trim() : ''; }
+
+  var first   = v('f-name');
+  var last    = v('f-last');
+  var phone   = v('f-phone');
+  var email   = v('f-email');
+  var service = v('f-service');
+  var urgency = v('f-urgency');
+  var when    = v('f-when');
+  var address = v('f-address');
+  var message = v('f-message');
+
+  if(!first || !phone || !service || !urgency){
+    alert('Please fill in your first name, phone, service needed, and how urgent it is.');
+    return;
+  }
+
+  var lines = [];
+  lines.push('New service request from allenehaa.com');
+  lines.push('');
+  lines.push('Name: ' + first + (last ? ' ' + last : ''));
+  lines.push('Phone: ' + phone);
+  if(email)   lines.push('Email: ' + email);
+  lines.push('Service: ' + service);
+  lines.push('Urgency: ' + urgency);
+  if(when)    lines.push('Best time: ' + when);
+  if(address) lines.push('Address: ' + address);
+  if(message){ lines.push(''); lines.push('Details: ' + message); }
+
+  var body = lines.join('\n');
+  var url;
+
+  if(channel === 'sms'){
+    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    url = 'sms:' + BIZ_PHONE_SMS + (isIOS ? '&' : '?') + 'body=' + encodeURIComponent(body);
+  } else {
+    url = 'https://wa.me/' + BIZ_PHONE_E164 + '?text=' + encodeURIComponent(body);
+  }
+
+  window.open(url, '_blank');
+
   document.getElementById('quote-form').style.display='none';
   document.getElementById('form-success').style.display='block';
 }
 
 // ── REVIEW LINK ─────────────────────────────────────────────
+// TODO: replace GOOGLE_REVIEW_URL with the real link from Google Business Profile
+// (search the business name on Google while signed in -> "Ask for reviews" -> copy).
+// Also update the href on the "Review on Google" button in the testimonials section.
+var GOOGLE_REVIEW_URL = 'https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review';
+
 function copyReviewLink(){
-  var link='https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review';
+  var link=GOOGLE_REVIEW_URL;
   navigator.clipboard.writeText(link).then(function(){
     document.getElementById('copy-msg').style.display='block';
     setTimeout(function(){document.getElementById('copy-msg').style.display='none';},3000);
@@ -893,7 +948,7 @@ document.querySelectorAll('[data-fade]').forEach(function(el){io.observe(el);});
 
 <script>
 var WA_BOT = (function() {
-  var NUMBER = '14127744086';
+  var NUMBER = '14122010796';
   var answers = {};
   var step = 0;
   var opened = false;
@@ -903,7 +958,7 @@ var WA_BOT = (function() {
       bot: "Hi! I'm the Allen Electric assistant. What do you need help with?",
       type: 'options',
       key: 'service',
-      options: ['AC Repair','AC Installation','Electric Heating','Mini-Split','Tune-Up','Emergency Help','Other']
+      options: ['Heating Repair','Heating Install','AC Repair','AC Install','220V Line','Panel Upgrade','Mini-Split','Tune-Up','Emergency','Other']
     },
     {
       bot: "Is this for a home or a business?",
@@ -930,15 +985,13 @@ var WA_BOT = (function() {
       placeholder: 'e.g. Pittsburgh, Bethel Park...'
     },
     {
-      bot: "Great! Here is your request summary:
-
-Service: {service}
-Property: {property}
-Name: {name}
-Phone: {phone}
-Location: {city}
-
-Tap below to send this to our team on WhatsApp!",
+      bot: "Great! Here is your request summary:\n\n"
+         + "Service: {service}\n"
+         + "Property: {property}\n"
+         + "Name: {name}\n"
+         + "Phone: {phone}\n"
+         + "Location: {city}\n\n"
+         + "Tap below to send this to our team on WhatsApp!",
       type: 'done'
     }
   ];
@@ -960,8 +1013,7 @@ Tap below to send this to our team on WhatsApp!",
     t.className = 'msg-time';
     t.textContent = getTime();
     // safe text — no innerHTML for user input
-    text.split('
-').forEach(function(line, i) {
+    text.split('\n').forEach(function(line, i) {
       if (i > 0) d.appendChild(document.createElement('br'));
       d.appendChild(document.createTextNode(line));
     });
@@ -998,20 +1050,12 @@ Tap below to send this to our team on WhatsApp!",
         inp.onkeydown = function(e) { if (e.key === 'Enter') submitText(); };
         setTimeout(function() { inp.focus(); }, 100);
       } else if (s.type === 'done') {
-        var msg = 'Hi Allen Electric! I would like to request a service.
-
-'
-          + 'Service needed: ' + answers.service + '
-'
-          + 'Property type: ' + answers.property + '
-'
-          + 'Name: ' + answers.name + '
-'
-          + 'Phone: ' + answers.phone + '
-'
-          + 'Location: ' + answers.city + '
-
-'
+        var msg = 'Hi Allen Electric! I would like to request a service.\n\n'
+          + 'Service needed: ' + answers.service + '\n'
+          + 'Property type: ' + answers.property + '\n'
+          + 'Name: ' + answers.name + '\n'
+          + 'Phone: ' + answers.phone + '\n'
+          + 'Location: ' + answers.city + '\n\n'
           + 'Please contact me at your earliest convenience. Thank you!';
         var link = 'https://wa.me/' + NUMBER + '?text=' + encodeURIComponent(msg);
         document.getElementById('wa-go-link').href = link;
